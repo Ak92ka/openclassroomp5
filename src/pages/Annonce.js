@@ -23,7 +23,7 @@ export default function Annonce() {
                             {annonce.tags.map((tag) => (
                                 <span key={tag} className="annonce-tags">{tag}</span>
                             ))}<br />                  
-                            <span>description</span><br />
+                            <span className="annonce-description">description</span><br />
                         </div>
                         <div className='annonce-right'>
                             <span className="host-name">{annonce.host.name} <img src={annonce.host.picture} alt="host pic" className="host-image"></img></span>

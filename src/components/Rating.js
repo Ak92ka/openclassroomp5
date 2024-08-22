@@ -10,7 +10,7 @@ export default function  Rating({ rating, setRating }) {
               style={{
                 cursor: 'pointer',
                 color: rating >= star ? '#ff6060' : 'gray',
-                fontSize: `35px`,
+                fontSize: `25px`,
               }}
               onClick={() => {
                 setRating(star)
