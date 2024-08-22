@@ -1,0 +1,20 @@
+.header {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+width: 100px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-style: normal;
+}
+
+.accueil {
+    padding-right: 40px;
+}

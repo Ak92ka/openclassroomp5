@@ -1,0 +1,49 @@
+.annonce-container {
+    margin-left: 28px;
+}
+
+.annonce-page-cover {
+    width: 97%;
+    height: 368px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.annonce-container2 {
+    display: flex;
+}
+
+.annonce-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0.9;    
+}
+
+.annonce-h1 {
+    color: #ff6e6e;
+    font-size: 23px;
+}
+
+.annonce-h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.host-image {
+    border-radius: 65px;
+    height: 77px;
+}
+
+.host-name {
+    color: #ff6e6e;
+}
+
+.annonce-tags {
+    border: 1px solid #ff6060;
+    background: #ff6060;
+    border-radius: 20px;
+    color: white;
+    margin-right: 10px;
+    padding: 2px 30px 2px 30px;
+}
