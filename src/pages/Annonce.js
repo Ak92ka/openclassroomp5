@@ -5,15 +5,20 @@ import '../styles/Annonce.css'
 import { Routes, Route, useParams } from 'react-router-dom';
 import React, {useState} from 'react';
 import Rating from '../components/Rating';
+import Erreur from './Erreur';
 
 export default function Annonce() {
     let {id}= useParams();
     console.log(id)
     const [rating, setRating] = useState(0)
+
+    const annonce = annonces.find(annonce => annonce.id === id)
+    if(!annonce) {
+        return(<Erreur />)
+    }
     return(
         <div>
             <Header />
-            {annonces.filter(annonce => annonce.id === id).map(annonce => (
                 <div key={annonce.id} className="annonce-container">
                     <img src={annonce.cover} alt="annonce cover" className="annonce-page-cover"></img>
                     <div className="annonce-container2">
@@ -32,9 +37,7 @@ export default function Annonce() {
                             <span>equipments</span><br />
                         </div>
                     </div>
-                </div>
-        ))}
-            
+                </div>            
             <Footer />
         </div>
     )

@@ -27,8 +27,10 @@ import {
 	  {
 		path: "*",
 		element: <Erreur />,
-	  }  
-
+	  },
+	  {		path: "/annonce/:*",
+		element: <Erreur />,
+	  }
   ]);
 
 ReactDOM.render(
