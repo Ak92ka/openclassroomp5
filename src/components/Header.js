@@ -5,10 +5,12 @@ import { Outlet, Link } from "react-router-dom";
 export default function Header() {
     return(
         <div className="header">
-            <img src={logo} alt="Kasa logo" className="logo" />
+            <Link to="/">
+                <img src={logo} alt="Kasa logo" className="logo" />
+            </Link>
             <i className="nav-list">
-                <li className="accueil">Accueil</li>
-                <li className="a-propos"><Link to={`a-propos`}>A Propos</Link></li>
+                <li className="accueil"><Link to={`/`}>Accueil</Link></li>
+                <li className="a-propos"><Link to={`/a-propos`}>A Propos</Link></li>
             </i>
         </div>
     );

@@ -18,3 +18,13 @@ width: 100px;
 .accueil {
     padding-right: 40px;
 }
+
+.accueil a {
+    text-decoration: none;
+    color: black;
+}
+
+.a-propos a {
+    text-decoration: none;
+    color: black;
+}

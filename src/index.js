@@ -2,11 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
 import Annonce from './pages/Annonce'
+import Accueil from './pages/Accueil'
+import Apropos from './pages/Apropos'
+import Erreur from './pages/Erreur'
 import {
 	createBrowserRouter,
 	RouterProvider,
   } from "react-router-dom";
-import Accueil from './pages/Accueil'
+
 
   const router = createBrowserRouter([
 	{
@@ -15,12 +18,16 @@ import Accueil from './pages/Accueil'
 	},
 	{
 		path: "/a-propos",
-		element: <div>A propos</div>,
+		element: <Apropos />,
 	  },  
 	  {
 		path: "/annonce/:id",
 		element: <Annonce />,
-	  },  
+	  },
+	  {
+		path: "*",
+		element: <Erreur />,
+	  }  
 
   ]);
 

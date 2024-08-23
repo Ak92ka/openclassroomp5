@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .content {
+    flex: 1;
+  }
+
+.h1-erreur {
+    color: #ff6060;
+    font-size: 150px;
+    margin-top: 8px;
+}
+
+.h2-erreur {
+    color: #ff6060;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+.lien-accueil {
+    color: black;
+    font-weight: 480;
+}
