@@ -1,19 +1,11 @@
-.image-banner {
-    width: 96%;
-    padding-left: 32px;
-    padding-bottom: 25px;
-}
-
 .gallery {
     background-color: #f6f6f6;
     padding: 29px;
-    margin-left: 32px;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 20px;
-    width: 91%;
 }
 
 .card {

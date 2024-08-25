@@ -8,7 +8,6 @@ export default function  Rating({ rating, setRating }) {
               key={star}
               className='start'
               style={{
-                cursor: 'pointer',
                 color: rating >= star ? '#ff6060' : 'gray',
                 fontSize: `25px`,
               }}

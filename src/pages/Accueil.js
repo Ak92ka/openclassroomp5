@@ -10,8 +10,8 @@ export default function Accueil() {
             <Header />
             <div className="content">
             <img src={imageBanner} alt="banner" className="image-banner"></img>
-            </div>
             <Card />
+            </div>
             <Footer />
         </div>
     )
