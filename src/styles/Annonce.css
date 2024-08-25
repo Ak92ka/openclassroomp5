@@ -60,3 +60,14 @@
     display: inline-block;
     padding-top: 19px;
 }
+
+.chevron {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.chevron-right {
+}
+
+.chevron-left {
+}

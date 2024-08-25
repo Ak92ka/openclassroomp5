@@ -28,7 +28,7 @@ import {
 		path: "*",
 		element: <Erreur />,
 	  },
-	  {		path: "/annonce/:*",
+	  {		path: "/annonce/:/*",
 		element: <Erreur />,
 	  }
   ]);

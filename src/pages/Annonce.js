@@ -2,15 +2,15 @@ import annonces from '../datas/annonces.json'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Annonce.css'
-import { Routes, Route, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import React, {useState} from 'react';
 import Rating from '../components/Rating';
 import Erreur from './Erreur';
+import SlideShow from '../components/SlideShow';
 
 export default function Annonce() {
     let {id}= useParams();
-    console.log(id)
-    const [rating, setRating] = useState(0)
+    const [setRating] = useState(0)
 
     const annonce = annonces.find(annonce => annonce.id === id)
     if(!annonce) {
@@ -19,8 +19,8 @@ export default function Annonce() {
     return(
         <div>
             <Header />
-                <div key={annonce.id} className="annonce-container">
-                    <img src={annonce.cover} alt="annonce cover" className="annonce-page-cover"></img>
+                <div className="annonce-container">
+                    <SlideShow />                    
                     <div className="annonce-container2">
                         <div className='annonce-left'>
                             <h1 className='annonce-h1'>{annonce.title}</h1>
