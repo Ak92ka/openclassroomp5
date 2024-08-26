@@ -30,12 +30,19 @@ export default function SlideShow() {
     return(
         <div>
             <img src={annonce.pictures[currentImageIndex]} alt="annonce cover" className="annonce-page-cover"></img>
-            <span onClick={nextImage}>
-                <FontAwesomeIcon icon={faChevronRight} className="chevron chevron-right"/>
-            </span>
-            <span onClick={prevImage}>
-                <FontAwesomeIcon icon={faChevronLeft} className="chevron chevron-left"/>
-            </span>
+            {annonce.pictures.length > 1 && (
+                <>
+                    <span onClick={nextImage}>
+                        <FontAwesomeIcon icon={faChevronRight} className="chevron chevron-right"/>
+                    </span>
+                    <span onClick={prevImage}>
+                        <FontAwesomeIcon icon={faChevronLeft} className="chevron chevron-left"/>
+                    </span>
+                    <span className="slideshow-total">
+                        {currentImageIndex + 1}/{annonce.pictures.length}
+                    </span>
+                </>
+            )}
         </div>
     )
 }

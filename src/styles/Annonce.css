@@ -62,12 +62,25 @@
 }
 
 .chevron {
+    position: absolute;
+    top: 266px;
     font-size: 40px;
     cursor: pointer;
+    color: white;
+    height: 56px;
 }
 
 .chevron-right {
+    right: 47px;
 }
 
 .chevron-left {
+    left: 47px;
+}
+
+.slideshow-total {
+    position: absolute;
+    bottom: 133px;
+    left: 513px;
+    color: white;
 }
