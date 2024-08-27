@@ -1,0 +1,31 @@
+.collapse-container {
+    margin: 20px 0;
+  }
+  
+  .collapse-toggle {
+    background-color: #ff6060;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  
+  .collapse-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  .collapse-content.open {
+    height: auto;
+  }
+  
+  .collapse-text {
+    padding: 15px;
+    background-color: #fbfbfb;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  
