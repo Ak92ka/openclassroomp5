@@ -9,7 +9,7 @@ export default function Card() {
                     annonces.map(annonce => (
                         <a href={`/annonce/${annonce.id}`} className="card" key={annonce.id}>
                             <img src={annonce.cover} alt="annonce cover" className="annonce-cover"></img>
-                            <span className="card-titre" style={{bottom: annonce.title.length > 35 ? "6px" : annonce.title.length < 35 ? "22px" : "initial"}}>
+                            <span className="card-titre">
                                 {annonce.title}
                             </span>
                         </a>

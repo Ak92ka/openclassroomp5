@@ -1,5 +1,5 @@
 
-export default function  Rating({ rating, setRating }) {
+export default function  Rating({ rating }) {
     return (
       <div>
         {[1, 2, 3, 4, 5].map((star) => {
@@ -11,12 +11,8 @@ export default function  Rating({ rating, setRating }) {
                 color: rating >= star ? '#ff6060' : 'gray',
                 fontSize: `25px`,
               }}
-              onClick={() => {
-                setRating(star)
-              }}
             >
-              {' '}
-              ★{' '}
+              ★
             </span>
           )
         })}

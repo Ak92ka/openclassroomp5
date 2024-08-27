@@ -1,11 +1,11 @@
 .gallery {
     background-color: #f6f6f6;
-    padding: 29px;
+    padding: 30px;
     display: flex;
-    gap: 40px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 20px;
+    row-gap: 30px;
 }
 
 .card {
@@ -13,10 +13,10 @@
     border-radius: 13px;
     position: relative;
     overflow: hidden;
-    width: 300px;
-    height: 400px;
+    width: calc((100% - 60px) / 3);
     display: flex;
     justify-content: flex-end;
+    aspect-ratio: 1;
 }
 
 .card-titre {
@@ -25,10 +25,20 @@
     bottom: 22px;
     left: 15px;
     font-weight: 600;
+    z-index: 2;
+}
+
+a.card:after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 50%);
 }
 
 .annonce-cover {
     width: 100%;
-    height: 84%;
+    height: 100%;
     object-fit: cover;
 }

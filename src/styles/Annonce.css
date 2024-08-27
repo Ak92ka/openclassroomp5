@@ -71,7 +71,7 @@
 }
 
 .chevron-right {
-    right: 47px;
+    right: 5%;
 }
 
 .chevron-left {
@@ -80,7 +80,7 @@
 
 .slideshow-total {
     position: absolute;
-    bottom: 133px;
-    left: 513px;
+    bottom: 24%;
+    left: 50%;
     color: white;
 }
