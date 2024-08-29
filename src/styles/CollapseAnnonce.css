@@ -1,9 +1,8 @@
-.collapse-container {
+.collapse-container-annonce {
     margin: 20px 0;
-    padding: 0 75px;
   }
   
-  .collapse-toggle {
+  .collapse-toggle-annonce {
     background-color: #ff6060;
     color: white;
     padding: 10px 12px;
@@ -13,36 +12,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-  }
-  
-  .collapse-content {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.3s ease;
-  }
-  
-  .collapse-content.open {
-    grid-template-rows: 1fr;  
+    width: 98%;
 }
   
-  .collapse-text {
-    padding: 0px;
-    background-color: #fbfbfb;
-    border-radius: 4px;
+  .collapse-content-annonce {
+    height: 0;
     overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  .collapse-content-annonce.open {
+    height: auto;
+  }
+  
+  .collapse-text-annonce {
+    padding: 1px 8px;
+    background-color: #fbfbfb;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-left: 77px;
+    width: 81%;
     text-align: left;
-    box-sizing: border-box;
     }
   
-  .collapse-text p {
-    margin: 0;
-  }
-
-  .collapse-text div {
-    padding: 10px;
-  }
-
   .chevron-up {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;

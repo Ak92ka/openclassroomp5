@@ -22,10 +22,11 @@
 .card-titre {
     color: white;
     position: absolute;
-    bottom: 22px;
+    bottom: 15px;
     left: 15px;
     font-weight: 600;
     z-index: 2;
+    text-align: left;
 }
 
 a.card:after {

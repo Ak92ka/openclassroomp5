@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
-import '../styles/Collapse.css'; 
+import '../styles/Collapse.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-export default function Collapse({ title, children }) {
+
+export default function Collapse({ title, isArray, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+
+  const handleToggle = () => setIsOpen(!isOpen);
 
   return (
     <div className="collapse-container">
-      <button onClick={toggle} className="collapse-toggle">
+      <button onClick={handleToggle} className="collapse-toggle">
         {title || 'Toggle'}
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          className={`chevron-up ${isOpen ? "rotate-left" : "rotate-right"}`}
+        />
       </button>
       <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
         <div className="collapse-text">
-          {children}
+          <div>
+            {Array.isArray(children) ? (
+              children.map((child, index) => <p key={index}>{child}</p>)
+            ) : (
+              children
+            )}
+          </div>
         </div>
       </div>
     </div>
