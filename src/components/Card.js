@@ -3,7 +3,7 @@ import annonces from '../datas/annonces.json'
 
 export default function Card() {
     return(
-        <div>
+        <div className="gallery-container">
             <div className="gallery">
                 {
                     annonces.map(annonce => (

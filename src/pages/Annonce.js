@@ -18,6 +18,7 @@ export default function Annonce() {
     }
     return (
         <div>
+            <div className="container">
             <Header />
             <div className="annonce-container">
                 <SlideShow />
@@ -25,9 +26,11 @@ export default function Annonce() {
                     <div className='annonce-left'>
                         <h1 className='annonce-h1'>{annonce.title}</h1>
                         <h2 className='annonce-h2'>{annonce.location}</h2>
+                        <div className="annonce-tags-container">
                         {annonce.tags.map((tag) => (
                             <span key={tag} className="annonce-tags">{tag}</span>
                         ))}<br />
+                        </div>
                     </div>
                     <div className='annonce-right'>
                         <span className="host-name">{annonce.host.name} <img src={annonce.host.picture} alt="host pic" className="host-image"></img></span>
@@ -43,6 +46,7 @@ export default function Annonce() {
                             {annonce.equipments}
                         </Collapse>
                     </div>
+            </div>
             </div>
             <Footer />
         </div>

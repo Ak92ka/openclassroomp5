@@ -8,6 +8,10 @@
     row-gap: 30px;
 }
 
+.gallery-container {
+    padding-top: 30px;
+}
+
 .card {
     background-color: #ff6060;
     border-radius: 13px;

@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function Erreur() {
     return(
+        <div>
         <div className="container">
             <Header />
             <div className="content">
@@ -16,7 +17,8 @@ export default function Erreur() {
                     <span className='lien-accueil'>Retourner sur la page d'accueil</span>
                 </Link>
             </div>
-            <Footer />
+        </div>
+        <Footer />
         </div>
     )
 }
