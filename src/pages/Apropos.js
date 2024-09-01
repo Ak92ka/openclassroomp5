@@ -7,9 +7,10 @@ import Collapse from '../components/Collapse';
 export default function Apropos() {
     return (
         <div>
-            <div className="container">
+            <div className="container2">
                 <Header />
-                <div className="banner-container">
+                <div className='content'>
+                <div className="banner-container2">
                     <img src={ImageBanner} alt="banner" className="image-banner2"></img>
                 </div>
                 <div>
@@ -25,6 +26,7 @@ export default function Apropos() {
                     <Collapse title={"Sécurité"}>
                         <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
                     </Collapse>
+                </div>
                 </div>
             </div>
             <Footer />
