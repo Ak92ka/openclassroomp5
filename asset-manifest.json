@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/openclassroomp5/static/css/main.2606fe77.chunk.css",
+    "main.js": "/openclassroomp5/static/js/main.51ab93cb.chunk.js",
+    "main.js.map": "/openclassroomp5/static/js/main.51ab93cb.chunk.js.map",
+    "runtime-main.js": "/openclassroomp5/static/js/runtime-main.7505e9aa.js",
+    "runtime-main.js.map": "/openclassroomp5/static/js/runtime-main.7505e9aa.js.map",
+    "static/js/2.ec74e6fd.chunk.js": "/openclassroomp5/static/js/2.ec74e6fd.chunk.js",
+    "static/js/2.ec74e6fd.chunk.js.map": "/openclassroomp5/static/js/2.ec74e6fd.chunk.js.map",
+    "index.html": "/openclassroomp5/index.html",
+    "static/css/main.2606fe77.chunk.css.map": "/openclassroomp5/static/css/main.2606fe77.chunk.css.map",
+    "static/js/2.ec74e6fd.chunk.js.LICENSE.txt": "/openclassroomp5/static/js/2.ec74e6fd.chunk.js.LICENSE.txt",
+    "static/media/Banner 1.7b295fcb.png": "/openclassroomp5/static/media/Banner 1.7b295fcb.png",
+    "static/media/Banner 2.388a325a.png": "/openclassroomp5/static/media/Banner 2.388a325a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7505e9aa.js",
+    "static/js/2.ec74e6fd.chunk.js",
+    "static/css/main.2606fe77.chunk.css",
+    "static/js/main.51ab93cb.chunk.js"
+  ]
+}
