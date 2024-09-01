@@ -30,9 +30,6 @@ import {
 	  },
 	  {		path: "/annonce/:/*",
 		element: <Erreur />,
-	  },
-	  {
-		basename: "/openclassroomp5/"
 	  }
   ]);
 
