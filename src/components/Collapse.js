@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Collapse({ title, isArray, children }) {
+export default function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
 
