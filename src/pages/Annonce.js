@@ -39,10 +39,10 @@ export default function Annonce() {
                     </div>
                 </div>
                 <div className='annonce-collapse'>
-                        <Collapse title="description">
+                        <Collapse title="Description">
                             <p>{annonce.description}</p>
                         </Collapse>
-                        <Collapse title="equipments" isArray="true">
+                        <Collapse title="Équipments" isArray="true">
                             {annonce.equipments}
                         </Collapse>
                     </div>
