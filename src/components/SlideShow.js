@@ -28,7 +28,7 @@ export default function SlideShow() {
     };
 
     return(
-        <div>
+        <div className="slide-show-container">
             <img src={annonce.pictures[currentImageIndex]} alt="annonce cover" className="annonce-page-cover"></img>
             {annonce.pictures.length > 1 && (
                 <>

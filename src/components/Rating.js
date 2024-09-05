@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function  Rating({ rating }) {
     return (
@@ -12,7 +16,9 @@ export default function  Rating({ rating }) {
                 fontSize: `25px`,
               }}
             >
-              ★
+              <FontAwesomeIcon
+          icon={faStar}
+        />
             </span>
           )
         })}
